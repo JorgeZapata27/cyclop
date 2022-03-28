@@ -94,7 +94,8 @@ class _ColorButtonState extends State<ColorButton> with WidgetsBindingObserver {
                 BoxDecoration(
                   shape: widget.boxShape,
                   color: widget.color,
-                  border: Border.all(width: 4, color: Colors.white),
+                  borderRadius: BorderRadius.circular(20),
+//                  border: Border.all(width: 4, color: Colors.white),
                 ),
           ),
         ),
