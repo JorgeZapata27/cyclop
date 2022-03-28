@@ -88,14 +88,14 @@ class _ColorButtonState extends State<ColorButton> with WidgetsBindingObserver {
               ? const CircleBorder()
               : const RoundedRectangleBorder(),
           child: Container(
-            width: widget.size,
-            height: widget.size,
+            width: 100,
+            height: 40,
             decoration: widget.decoration ??
                 BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
                   shape: widget.boxShape,
                   color: widget.color,
-                  borderRadius: BorderRadius.circular(20),
-//                  border: Border.all(width: 4, color: Colors.white),
+                  // border: Border.all(width: 4, color: Colors.white),
                 ),
           ),
         ),
