@@ -84,24 +84,7 @@ class _ColorButtonState extends State<ColorButton> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) => GestureDetector(
         onTapDown: (details) => _colorPick(context, details),
-        child: Material(
-          elevation: 0,
-          shape: widget.boxShape == BoxShape.circle
-              ? const CircleBorder()
-              : const RoundedRectangleBorder(),
-          child: Container(
-            width: 100,
-            height: 40,
-            child: widget.child,
-            decoration: widget.decoration ??
-                BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  shape: widget.boxShape,
-                  color: widget.color,
-                  border: Border.all(width: 4, color: Colors.orange),
-                ),
-          ),
-        ),
+        child: widget.child,
       );
 
   void _colorPick(BuildContext context, TapDownDetails details) async {
