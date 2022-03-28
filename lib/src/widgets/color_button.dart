@@ -90,6 +90,18 @@ class _ColorButtonState extends State<ColorButton> with WidgetsBindingObserver {
           child: Container(
             width: 100,
             height: 40,
+            child: Center(
+              child: Text(
+                "Change",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontFamily: 'Inter',
+                  fontSize: 16,
+                  color: Color(0xFF52A2FD)
+                  fontWeight: FontWeight.bold,
+                ),
+              );
+            ),
             decoration: widget.decoration ??
                 BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
